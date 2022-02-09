@@ -14,7 +14,9 @@ const Hero = () => {
         Get started <span>- it's free</span>{" "}
       </button>
       <p>No credit card required</p>
-      <img src={HeroImg} alt="" />
+      <div className="image">
+        <img src={HeroImg} alt="" />
+      </div>
     </div>
   );
 };

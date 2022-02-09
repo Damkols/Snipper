@@ -1,0 +1,50 @@
+$Poppins: "Poppins", sans-serif;
+
+/* SCSS HEX */
+$black: #000000ff;
+$jet: #3d3c3cff;
+$jet-2: #383838ff;
+
+.nav_container {
+  display: flex;
+  height: 100px;
+  width: min(90%, 1200px);
+  margin-inline: auto;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+  }
+
+  .links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    li {
+      margin-left: 20px;
+
+      a {
+        text-decoration: none;
+        color: $jet;
+        font-family: $Poppins;
+        font-size: 0.9rem;
+      }
+
+      button {
+        border: 1px solid transparent;
+        outline: none;
+        padding: 0.75rem 1.25rem;
+        border-radius: 5px;
+        background: $black;
+        font-family: $Poppins;
+        color: #fff;
+        margin-top: 0.6rem;
+
+        span {
+          color: $jet;
+        }
+      }
+    }
+  }
+}

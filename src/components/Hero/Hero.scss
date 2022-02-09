@@ -4,23 +4,29 @@ $Poppins: "Poppins", sans-serif;
 $black: #000000ff;
 $jet: #3d3c3cff;
 $jet-2: #383838ff;
+@import "../../breakpoints/breakpoints.scss";
 
 .hero_container {
-  background: url(../../assets/Background.png);
-  //   height:'100vh',
-  //         marginTop:'-70px';
-  //         fontSize:'50px';
-  //         backgroundSize: 'cover';
-  //         backgroundRepeat: 'no-repeat';
-
+  width: min(95%, 1200px);
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+  margin-inline: auto;
   font-family: $Poppins;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
+
+  @include media(">tablet", "<=1200px") {
+    background: blue;
+  }
+
+  @include media("<=tablet") {
+    background: red;
+  }
+
+  @include media(">phone", "<=425px") {
+    background: purple;
+  }
 
   h1 {
     font-size: 3rem;
@@ -31,7 +37,7 @@ $jet-2: #383838ff;
     text-align: center;
     color: $jet-2;
     font-size: 0.9rem;
-    margin-top: 0.4rem;
+    margin-top: 0.5rem;
   }
 
   button {
@@ -49,8 +55,13 @@ $jet-2: #383838ff;
     }
   }
 
-  img {
-    margin-top: 3rem;
+  .image {
+    margin-top: 3.2rem;
+    height: 40%;
     width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 $Poppins: "Poppins", sans-serif;
-
+@import "./breakpoints/breakpoints.scss";
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +14,15 @@ $Poppins: "Poppins", sans-serif;
 }
 
 .App {
-  width: min(95%, 1200px);
+  width: 100%;
   margin-inline: auto;
+
+  .hero__container {
+    background: url(./assets/Background.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-bottom: 50px;
+  }
 }
