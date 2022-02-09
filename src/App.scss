@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+$Poppins: "Poppins", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+.App {
+  width: min(95%, 1200px);
+  margin-inline: auto;
+}
