@@ -1,14 +1,9 @@
-$Poppins: "Poppins", sans-serif;
-
-/* SCSS HEX */
-$black: #000000ff;
-$jet: #3d3c3cff;
-$jet-2: #383838ff;
+@import "../../breakpoints/variables.scss";
 @import "../../breakpoints/breakpoints.scss";
 
 .hero_container {
   width: min(95%, 1200px);
-  height: 100vh;
+  height: 100%;
   margin-inline: auto;
   font-family: $Poppins;
   display: flex;
@@ -17,11 +12,9 @@ $jet-2: #383838ff;
   margin-top: 1rem;
 
   @include media(">tablet", "<=1200px") {
-    background: blue;
   }
 
   @include media("<=tablet") {
-    background: red;
   }
 
   @include media(">phone", "<=425px") {
@@ -31,13 +24,26 @@ $jet-2: #383838ff;
   h1 {
     font-size: 3rem;
     color: $black;
+    text-align: center;
+    @include media(">tablet", "<=1200px") {
+      font-size: 2rem;
+    }
+    @include media("<=tablet") {
+      font-size: 2rem;
+    }
   }
 
   p {
     text-align: center;
     color: $jet-2;
     font-size: 0.9rem;
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
+    @include media(">tablet", "<=1200px") {
+      font-size: 0.7rem;
+    }
+    @include media("<=tablet") {
+      font-size: 0.7rem;
+    }
   }
 
   button {
@@ -56,9 +62,13 @@ $jet-2: #383838ff;
   }
 
   .image {
-    margin-top: 3.2rem;
-    height: 40%;
+    margin-top: 3.5rem;
+    height: 45%;
     width: 100%;
+    @include media(">tablet", "<=1200px") {
+      margin-top: 2.2rem;
+      height: 45%;
+    }
     img {
       width: 100%;
       height: 100%;

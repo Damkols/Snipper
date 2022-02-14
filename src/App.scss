@@ -24,5 +24,8 @@ $Poppins: "Poppins", sans-serif;
     background-repeat: no-repeat;
     height: 100vh;
     margin-bottom: 50px;
+    @include media("<=tablet") {
+      height: 100%;
+    }
   }
 }
