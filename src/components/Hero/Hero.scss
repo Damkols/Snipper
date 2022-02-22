@@ -3,7 +3,7 @@
 
 .hero_container {
   width: min(95%, 1200px);
-  height: 100%;
+  height: 100vh;
   margin-inline: auto;
   font-family: $Poppins;
   display: flex;
@@ -12,13 +12,14 @@
   margin-top: 1rem;
 
   @include media(">tablet", "<=1200px") {
+    height: 100%;
   }
 
   @include media("<=tablet") {
+    height: 100%;
   }
 
   @include media(">phone", "<=425px") {
-    background: purple;
   }
 
   h1 {
@@ -63,11 +64,11 @@
 
   .image {
     margin-top: 3.5rem;
-    height: 45%;
+    height: 50%;
     width: 100%;
     @include media(">tablet", "<=1200px") {
-      margin-top: 2.2rem;
-      height: 45%;
+      margin-top: 2.5rem;
+      height: 50%;
     }
     img {
       width: 100%;
